@@ -3861,7 +3861,7 @@ uniform vec3 clothTint;`).replace("#include <map_fragment>",`#include <map_fragm
       ${o}
       <p class="menu-note">${e?"タップで えらぶ":"クリックで えらぶ"}　　ハードは ほぼ 勝てない</p>
       ${fu()}
-      <p class="credit">パソコンでも スマホでも 遊べる<br />キャラクター：KayKit（CC0）　フォント：DotGothic16（SIL OFL）<br />この ゲームは フィクションです。 実在の 人物・団体とは 関係ありません。</p>`;for(const a of this.screenInner.querySelectorAll("[data-hero]"))a.addEventListener("click",l=>{l.preventDefault(),this.onStartHero(a.dataset.hero==="hard"?"hard":"practice")});mn(this.screenEl,!0)}showResult(t){const e=t.demons.map(n=>`<li>　${n.name}（${n.role}）　…… ${n.slain?"斬った":"見ぬけなかった"}</li>`).join("");this.screenInner.innerHTML=`
+      <p class="credit">パソコンで 遊べる（スマホ用の 操作も あり・実機では まだ 確かめていない）<br />キャラクター：KayKit（CC0）　フォント：DotGothic16（SIL OFL）<br />この ゲームは フィクションです。 実在の 人物・団体とは 関係ありません。</p>`;for(const a of this.screenInner.querySelectorAll("[data-hero]"))a.addEventListener("click",l=>{l.preventDefault(),this.onStartHero(a.dataset.hero==="hard"?"hard":"practice")});mn(this.screenEl,!0)}showResult(t){const e=t.demons.map(n=>`<li>　${n.name}（${n.role}）　…… ${n.slain?"斬った":"見ぬけなかった"}</li>`).join("");this.screenInner.innerHTML=`
       <h1 class="${t.won?"":"lose"}">${t.won?t.hard?"ハードモード クリア！":"勇者の 勝ち！":"悪魔の 勝ち……"}</h1>
       <p class="tagline">${t.hard?"【ハードモード】　":""}${t.reason}</p>
       <ul>
