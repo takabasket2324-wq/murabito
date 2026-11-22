@@ -1,0 +1,34 @@
+title: "感想："
+body:
+  - type: markdown
+    attributes:
+      value: |
+        遊んでくれて ありがとう！ 思ったことを 気楽に 書いてください。 空欄の まま でも だいじょうぶ です。
+  - type: dropdown
+    id: mode
+    attributes:
+      label: どれで 遊んだ？
+      options:
+        - ひとりで（勇者）れんしゅう
+        - ひとりで（勇者）ハード
+        - 両方
+  - type: dropdown
+    id: device
+    attributes:
+      label: 遊んだ 機械
+      options:
+        - パソコン
+        - スマホ
+        - タブレット
+  - type: textarea
+    id: found
+    attributes:
+      label: 悪魔は 見ぬけた？ 何で 気づいた？
+  - type: textarea
+    id: fun
+    attributes:
+      label: 楽しかった ところ
+  - type: textarea
+    id: hard
+    attributes:
+      label: 分かりにくかった・つまらなかった ところ
